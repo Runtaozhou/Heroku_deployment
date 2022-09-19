@@ -1,0 +1,66 @@
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/mystyle.css') }}">
+</head>
+<body style="background-color:#4CAF50;">
+  <div style = "padding: 50px 0; border: 3px solid green;text-align: center; margin-bottom:10px; font-weight: bold;color: white;">
+    <img src = "{{url_for('static', filename='img/iris.png')}}" , alt="iris">
+    <h2>Iris Classifier</h2>
+  </div>  
+  <div>
+  <form action="/result" method="POST">
+    <div style = "padding: 20px 0; border: 3px solid green;text-align: center; font-weight: bold;color: white;">
+      <label for="">sepal length (cm)</label>
+      <input type="text" id="sepal_length" name="sepal_length">
+      <div class="help-tip">
+        <p> Sepal: each of the parts of the calyx of a flower, enclosing the petals and typically green and leaflike.
+          Typical Sepal Length for Iris: 4-8 cm
+        </p>
+      </div>
+    </div>
+    <br>
+    <div style = "padding: 20px 0; border: 3px solid green;text-align: center; font-weight: bold;color: white;">
+      <label for="sepal width (cm)">sepal width (cm)</label>
+      <input type="text" id="sepal_width" name="sepal_width">
+      <div class="help-tip">
+        <p> Sepal: each of the parts of the calyx of a flower, enclosing the petals and typically green and leaflike.
+          Typical Sepal Width for Iris: 2-5 cm
+        </p>
+      </div>
+    </div>
+    <br>
+    <div style = "padding: 20px 0; border: 3px solid green;text-align: center; font-weight: bold;color: white;" >
+      <label for="petal length (cm)">petal length (cm)</label>
+      <input type="text" id="petal_length" name="petal_length">
+      <div class="help-tip">
+        <p>Petal: each of the segments of the corolla of a flower, which are modified leaves and are typically colored.
+          Typical Petal Length for Iris: 1-7cm
+        </p>
+      </div>
+    </div>
+    <br>
+    <div style = "padding: 20px 0; border: 3px solid green;text-align: center; font-weight: bold;color: white;">
+      <label for="petal width (cm)">petal width (cm)</label>
+      <input type="text" id="petal_width" name="petal_width">
+      <div class="help-tip">
+        <p>Petal: each of the segments of the corolla of a flower, which are modified leaves and are typically colored.
+          Typical Petal Width for Iris: 0.5-2.5cm
+        </p>
+      </div>
+    </div>
+    <br>
+    <div style = "padding: 30px 0; border: 3px solid green;text-align: center; font-weight: bold;">
+      <input type="submit" value="Submit" style = "background-color: green; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 16px;">
+    </div>
+  </form>
+</div>
+</body>
+</html>
